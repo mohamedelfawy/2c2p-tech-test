@@ -17,7 +17,7 @@ namespace _2c2p_tech_test.Tests.Controllers
         public void Get()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            CardsController controller = new CardsController();
 
             // Act
             IEnumerable<string> result = controller.Get();
@@ -33,7 +33,7 @@ namespace _2c2p_tech_test.Tests.Controllers
         public void GetById()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            CardsController controller = new CardsController();
 
             // Act
             string result = controller.Get(5);
@@ -46,10 +46,10 @@ namespace _2c2p_tech_test.Tests.Controllers
         public void Post()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            CardsController controller = new CardsController();
 
             // Act
-            controller.Post("value");
+           // controller.Post("value");
 
             // Assert
         }
@@ -58,7 +58,7 @@ namespace _2c2p_tech_test.Tests.Controllers
         public void Put()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            CardsController controller = new CardsController();
 
             // Act
             controller.Put(5, "value");
@@ -70,7 +70,7 @@ namespace _2c2p_tech_test.Tests.Controllers
         public void Delete()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            CardsController controller = new CardsController();
 
             // Act
             controller.Delete(5);

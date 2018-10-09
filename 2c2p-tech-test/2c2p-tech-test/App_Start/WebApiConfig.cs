@@ -14,6 +14,17 @@ namespace _2c2p_tech_test
             // Web API routes
             config.MapHttpAttributeRoutes();
 
+          
+            config.Routes.MapHttpRoute(
+              name: "ValidateCard",
+             routeTemplate: "api/Cards/ValidateCard",
+              defaults: new { controller = "Cards", Action = "ValidateCard" }
+           );
+            config.Routes.MapHttpRoute(
+            name: "AddCard",
+           routeTemplate: "api/Cards/AddCard",
+            defaults: new { controller = "Cards", Action = "AddCard" }
+         );
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
