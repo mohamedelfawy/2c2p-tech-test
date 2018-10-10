@@ -10,8 +10,6 @@ namespace _2c2p_tech_test.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
-
             return View();
         }
     }
